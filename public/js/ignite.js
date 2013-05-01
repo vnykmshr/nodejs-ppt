@@ -34,10 +34,8 @@
     }, 1000);
   };
 
-  Ignite =  {
-    start: start
-  };
+  //Ignite =  {
+  //  start: start
+  //};
 
 })();
-
-
