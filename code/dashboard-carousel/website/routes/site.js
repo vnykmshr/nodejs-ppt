@@ -5,8 +5,7 @@ module.exports = function(app){
   });
 
   app.get('/', function(req, res) {
-    res.sendfile('index.html');
+    console.log('1');
+    res.redirect('/index.html');
   });
 };
-
-
