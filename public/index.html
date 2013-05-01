@@ -1,19 +1,18 @@
 <!doctype html>
-
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Node.js Talk</title>
-    
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.">
-    <meta name="author" content="" />
+  <meta charset="utf-8" />
+  <title>Node.js Session</title>
 
-    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /> -->
+  <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.">
+  <meta name="author" content="" />
 
-    <link href="css/impress-demo.css" rel="stylesheet" />
-    <link href="css/ignite.css" rel="stylesheet" />
+  <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /> -->
 
+  <link href="css/impress-demo.css" rel="stylesheet" />
+  <link href="css/ignite.css" rel="stylesheet" />
 </head>
+
 <body>
   <div id='slides'>
     <!--<span id='slide-number'>1</span>/21-->
@@ -23,15 +22,15 @@
   </div>
 
   <div id="impress">
-
     <div id="start" class="step" data-x="0" data-y="0">
-      <img src="images/strangelove.jpg">
+      <img src="images/strangelove.jpg" />
     </div>
 
     <div id="define" class="step" data-x="1200" data-y="0">
       <h1>Node.js</h1>
       <p>
-        a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications
+        a platform built on Chrome's JavaScript runtime for easily building fast,
+        scalable network applications
       </p>
     </div>
 
@@ -41,7 +40,7 @@
         <li>Node.js is a platform for building fast, scalable network applications</li>
         <li>Uses event-driven, asynchronous I/O to minimize overhead and maximize scalability</li>
         <li>Great for data-intensive, real-time applications</li>
-      </ul>
+        </ul>
     </div>
 
     <div id="history1" class="step" data-x="1800" data-y="-500">
@@ -52,65 +51,38 @@
     <div id="history2" class="step" data-x="2300" data-y="0">
       <h1>History</h1>
       <ul>
-        <li>
-          2009 - Ryan Dahl, JSConf EU, Joyent
-        </li>
-        <li>
-          2010 - v0.2 "stable-ish"
-        </li>
-        <li>
-          2/2011 - v0.4 "stuff works"
-        </li>
-        <li>
-          11/2011 - v0.6 "stuff works on windows"
-        </li>
-        <li>
-          6/2012 - v0.8 "stuff works better" 
-        </li>
+        <li>2009 - Ryan Dahl, JSConf EU, Joyent</li>
+        <li>2010 - v0.2 "stable-ish"</li>
+        <li>2/2011 - v0.4 "stuff works"</li>
+        <li>11/2011 - v0.6 "stuff works on windows"</li>
+        <li>6/2012 - v0.8 "stuff works better"</li>
+        <li>2013 - v0.10 "evolution continues"</li>
       </ul>
     </div>
 
     <div id="wat" class="step" data-x="3400" data-y="0">
       <h1>WAT</h1>
       <ul>
-        <li>
-          Evented, non-blocking I/O
-        </li>
-        <li>
-          Server-side Javascript
-        </li>
-        <li>
-          CommonJS module system
-        </li>
-        <li>
-          20k C/C++ Lines, 20k JS lines
-        </li>
+        <li>Evented, non-blocking I/O</li>
+        <li>Server-side Javascript</li>
+        <li>CommonJS module system</li>
+        <li>20k C/C++ Lines, 20k JS lines</li>
       </ul>
     </div>
 
     <div id="architecture" class="step" data-x="3800" data-y="-600">
       <img src="images/architecture.png">
     </div>
-        
+
     <!--5-->
     <div id="expensive" class="step" data-x="4800" data-y="0">
       <h1>I/O is expensive</h1>
       <ul>
-        <li>
-          L1: 3 cycles
-        </li>
-        <li>
-          L2: 14 cycles
-        </li>
-        <li>
-          RAM: 250 cycles
-        </li>
-        <li>
-          DISK: 41,000,000 cycles
-        </li>
-        <li>
-          NETWORK: 240,000,000 cycles
-        </li>
+        <li>L1: 3 cycles</li>
+        <li>L2: 14 cycles</li>
+        <li>RAM: 250 cycles</li>
+        <li>DISK: 41,000,000 cycles</li>
+        <li>NETWORK: 240,000,000 cycles</li>
       </ul>
     </div>
 
@@ -136,7 +108,7 @@
     </div>
 
     <div id="event-loop" class="step" data-x="2600" data-y="1000">
-    <h1>event loop pseudo code</h1>
+        <h1>event loop pseudo code</h1>
       <pre>
         while (1) {
           fd = poll(fds, next_timer());
@@ -169,7 +141,7 @@
       </pre>
     </div>
 
-    <div id="nginx" class="step" data-x="4400" data-y="3000" data-scale="4">
+    <div id="nginx" class="step" data-x="5400" data-y="3000" data-scale="4">
       <h1>nginx vs apache</h1>
       <img class="a" src="images/nginx.png">
       <img class="b" src="images/nginx2.png">
@@ -224,12 +196,7 @@
       <h1>NPM</h1>
       <p> Rubygems on steroids</p>
     </div>
-    
-    <div id="stack" class="step" data-x="1200" data-y="5000">
-        <h1>Stack</h1>
-        <img src="images/nodejs-app-stack.jpg">
-    </div>
-    
+
     <div id="limited" class="step" data-x="1200" data-y="3500">
       <h1>limited surface area</h1>
       <pre>
@@ -238,9 +205,14 @@
         http.createServer(function (req, res) {
           res.end('Hello World');
         }).listen(1337, "127.0.0.1");
-        
+
         console.log('Server running at http://127.0.0.1:1337/');
       </pre>
+    </div>
+
+    <div id="stack" class="step" data-x="1200" data-y="5000">
+        <h1>Stack</h1>
+        <img src="images/nodejs-app-stack.jpg">
     </div>
 
     <div id="me" class="step" data-x="0" data-y="1000">
