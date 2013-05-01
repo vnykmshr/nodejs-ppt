@@ -15,5 +15,4 @@ request('http://search.twitter.com/search.json?q=node.js', function (error, resp
 
 
 // stream image 
-// request('http://mcgonnigle.files.wordpress.com/2007/07/coonbig.jpg').pipe(fs.createWriteStream('cat.png'))
-
+// request('http://thumbs.ifood.tv/files/u103/samosa.jpg').pipe(fs.createWriteStream('cat.png'))
